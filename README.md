@@ -1,3 +1,13 @@
+## One Python interface for image and video data
+
+This is a development fork of [ImageIO](https://github.com/imageio/imageio), a Python library for reading and writing image, video, and volumetric data. Upstream exposes a compact API around format-specific backends and NumPy arrays, making it useful when analysis code needs to consume several image formats or export results without changing its core data model.
+
+**Contribution to review:** [PR #1240](https://github.com/imageio/imageio/pull/1240) proposes debug-level logging for FreeImage loader failures. The change focuses on diagnostics for one backend; it remains an upstream proposal with implementation and validation details linked above.
+
+Start with the [official documentation](https://imageio.readthedocs.io) and the concise API examples below. Check the relevant plugin's dependencies for the formats you need. The [branch comparison](https://github.com/imageio/imageio/compare/master...jdotc1:master) shows this fork's default branch separately from the proposed diagnostic change.
+
+---
+
 # IMAGEIO
 
 [![CI](https://github.com/imageio/imageio/workflows/CI/badge.svg)](https://github.com/imageio/imageio/actions/workflows/ci.yml)
